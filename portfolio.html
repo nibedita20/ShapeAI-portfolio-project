@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main class='app'>
+      <nav class='navBar'>
+        <h1>Nibedita Pakhira Portfolio</h1>
+        <div class='navigationMenu'>
+          <a href="#aboutMe">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contactForm">Contact</a>
+        <div>
+      </nav>
+      <section class='heroSection'>
+        <img 
+        class='profileImage'
+        src='femaleavatar.jpg'/>
+        <div class='herosectionDetails'>
+          <h1>Nibedita Pakhira</h1>
+          <h3>Computer Engineering student</h3>
+        </div>
+      </section>
+      <section class='aboutMe' id='aboutMe'>
+        <h1>About Me</h1>
+        <p class='para'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit reiciendis necessitatibus, omnis deleniti velit veritatis laboriosam beatae. Molestias vero, saepe nobis vitae odio ex excepturi laborum minus, libero, eaque est sit sunt animi. Tempore, quae ad repudiandae voluptates dolore vitae voluptatem eos iste. Officia aspernatur accusantium quis saepe dicta odit molestiae exercitationem consectetur laudantium laborum reprehenderit, dolore voluptatum soluta nemo.</p>
+      </section>
+      <section class='skillsAndProjects'>
+        <div class='skills' id='skills'>
+          <h1 class='cardHeadingg'>Skills</h1>
+          <img title='HTML' src='html-svgrepo-com.svg'>
+          <img title='CSS' src='css-svgrepo-com.svg'>
+          <img title='Figma' src='figma-1-logo-svgrepo-com.svg'>
+
+        </div>
+        <div class='projects' id='projects'>
+          <h1 class='cardHeading'>Projects</h1>
+          <div class='projectContainer'>
+            <img src='css-svgrepo-com.svg'/>
+            <div class='projectDescription'>
+              <h4>Project Name</h4>
+              <p>Some details of the project.Some details of the project.Some details of the project.</p>
+            </div>
+          </div>
+          <div class='projectContainer'>
+            <img src='css-svgrepo-com.svg'/>
+            <div class='projectDescription'>
+              <h4>Project Name</h4>
+              <p>Some details of the project</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='contactForm' id='contactForm'>
+        <h1>Contact Me</h2>
+        <div class='formGroup'>
+          <label for='name'>Enter Full Name</label><br/>
+          <input type='text' id='name' placeholder='Full Name'/>
+        </div>
+        <div class='formGroup'>
+          <label for='email'>Email</label><br/>
+          <input type='text' id='email' placeholder='Email'/>
+        </div>
+        <div class='formGroup'>
+          <label for='message'>Message</label><br/>
+          <textarea placeholder="Send some message!" id="message" name="w3review" rows="4" cols="50"></textarea>
+        </div>
+        <button class='submitButton' onClick={submit()}>Connect</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
